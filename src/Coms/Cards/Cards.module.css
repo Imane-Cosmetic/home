@@ -1,0 +1,128 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-left:  2%;
+  margin-right:  2%;
+  width: 30%;
+  margin: 1%;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+  overflow: hidden;
+}
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  border-top-left-radius: 0.428rempx;
+  border-top-right-radius: 0.428rempx;
+}
+
+.productDetail {
+margin-top: 10px;
+text-align: center;
+}
+
+.productDetail h2 {
+font-size: 1.1em;
+margin-bottom: 8px;
+color: #333;
+}
+
+.productDetail h3 {
+font-size: 0.9em;
+color: #777;
+}
+
+.productDetail h3 del {
+font-weight: 500;
+color: #dc3545;
+margin-left: 5px;
+font-size: 0.8em;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+.card {
+  width: 100%; /* Full width on small screens */
+  max-width: none; /* Remove max-width constraint */
+
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(34, 41, 47, 0);
+  font-style: inherit;
+  font-family: 'Al-Jazeera-Arabic-Bold';
+  font-weight: 400;
+  font-size: 1rem;
+  direction: ltr;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FFFFFF;
+  background-clip: border-box;
+  border: 0 solid rgba(34, 41, 47, 0.125);
+  border-radius: 0.428rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+  overflow: hidden;
+}
+
+.cardImg {
+  border-top-left-radius: 0.428rempx;
+  border-top-right-radius: 0.428rempx;
+}
+
+.productDetail h2 {
+  font-size: 1em; /* Smaller font size for title */
+}
+
+.productDetail h3 {
+  font-size: 0.8em; /* Smaller font size for description */
+}
+}
+
+.Productname{
+  direction: rtl;
+
+  color:#D63384;
+  font-weight: bold;
+  font-size: larger;
+  text-align: right;
+  margin-right: 5%;
+
+}
+
+.Description{
+  font-family: 'Amiri', 'Scheherazade', 'Noto Naskh Arabic', 'Arial', sans-serif;
+
+  direction: rtl;
+  color:#444042;
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 4%;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+.price{
+  padding-bottom: 4px;
+  text-align: left;
+  margin-left: 4%;
+  color:#007aff;
+  font-size: 150%;
+}

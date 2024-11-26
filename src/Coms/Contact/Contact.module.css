@@ -1,0 +1,127 @@
+.contactSection {
+    padding: 20px;
+    width: 300px;
+}
+
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.formLabel {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+.formInput, .formTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formTextarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submitButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+.contactInfo {
+    
+    text-align: center;
+    margin-top: 20px;
+    width: 100vw ;
+    background-color: #5f5b5b;
+
+    bottom: 0;       /* Stick it to the bottom of the viewport */
+    left: 0;         /* Align it to the left */
+    height: auto;    /* Adjust height based on content */
+    padding: 10px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+.contactInfo p {
+    font-size: large;
+    color: white;
+}
+
+.infoItem {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+.Whatsapp{
+    display: none;
+}
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .contactTitle {
+        font-size: 1.5em;
+    }
+
+    .contactSubtitle {
+        font-size: 1em;
+    }
+
+    .formInput, .formTextarea {
+        font-size: 0.9em;
+    }
+
+    .submitButton {
+        font-size: 0.9em;
+    }
+    .Whatsapp{
+        position: fixed; /* Fix the position relative to the viewport */
+        bottom: 16px;    /* Distance from the bottom of the screen */
+        right: 16px;     /* Distance from the right of the screen */
+        width: 60px;     /* Width of the icon */
+        height: 60px;    /* Height of the icon */
+        background-color: #25D366; /* Example background color (WhatsApp green) */
+        border-radius: 50%; /* Make it circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Shadow for better visibility */
+        z-index: 1000; /* Ensure it stays on top of other elements */
+    }
+    .Whatsapp img{
+        width: 70%;
+        height: 70%;
+    }
+}
